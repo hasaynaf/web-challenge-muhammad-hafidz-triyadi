@@ -1,13 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  margin: 0px;
+  font-family: 'Quicksand', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+input,
+label {
+  display: block;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.container {
+  margin: 0 auto;
+  margin-top: 75px;
+  width: 85%;
+  height: 20%;
+}
+
+.container-login {
+  margin-top: 75px;
+}
+
+.login {
+  width: 75%;
+  height: 20%;
+  margin: 0 auto;
+}
+
+.login-header {
+  margin-bottom: 35px;
+}
+
+.login-footer {
+  margin-top: 65px;
+  text-align: center;
+}
+
+.form-container-input {
+  margin-bottom: 25px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+.form-container-submit {
+  display: flex;
+  justify-content: end;
+  margin-top: 35px;
+}
+
+.btn-submit {
+  width: 100px;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  background-color: rebeccapurple;
+}
+
+.logout {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+}
+
+.btn-logout {
+  width: 100px;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  background-color: rgb(153, 51, 51);
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.col {
+  display: flex;
+  flex: 25%;
+  justify-content: center;
+  align-items: center;
+  max-width: 25%;
+  padding: 0 5px;
+}
+
+.gallery {
+  margin: 15px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+  max-height: 600px;
+}
+
+.gallery:hover {
+  border: 1px solid #777;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+  .col {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .col {
+    flex: 100%;
+    max-width: 100%;
+  }
 }
